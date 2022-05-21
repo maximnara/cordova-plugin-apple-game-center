@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-apple-game-center",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cordova plugin to work with Apple Game Center",
+  "main": "./www/gamecenter.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximnara/cordova-plugin-apple-game-center.git"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Maksim Luzhkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maximnara/cordova-plugin-apple-game-center/issues"
+  },
+  "homepage": "https://github.com/maximnara/cordova-plugin-apple-game-center"
+}

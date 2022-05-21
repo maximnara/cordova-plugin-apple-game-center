@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin
+        id="cordova-plugin-apple-game-center"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+    <name>cordova-plugin-apple-game-center</name>
+    <description>Cordova plugin to work with Google Play Games services</description>
+    <js-module src="www/gamecenter.js" name="GameCenter">
+        <clobbers target="GameCenter" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=9.0" />
+        <engine name="cordova-ios" version=">=6.2.0" />
+    </engines>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GameCenterPlugin">
+                <param name="ios-package" value="GameCenterPlugin" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/GameCenterPlugin.h" />
+        <source-file src="src/ios/GameCenterPlugin.m" />
+
+        <framework src="GameKit.framework" />
+    </platform>
+</plugin>
