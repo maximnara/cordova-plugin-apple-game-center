@@ -229,7 +229,7 @@ function defaults(o, defaultObject)
 }
 
 
-if (typeof module !== undefined && module.exports)
+if (typeof window.module !== 'undefined' && window.module.exports)
 {
-    module.exports = GameCenter;
+    window.module.exports = GameCenter;
 }
