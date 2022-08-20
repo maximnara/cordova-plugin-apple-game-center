@@ -124,6 +124,9 @@
     CDVViewController *vc = (CDVViewController *)[super viewController];
     [vc presentViewController:self.achievementsController animated:YES completion: ^{
     }];
+
+    CDVPluginResult* pr = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pr callbackId:command.callbackId];
 }
 
 - (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController {
